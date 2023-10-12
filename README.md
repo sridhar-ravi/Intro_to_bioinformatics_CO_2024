@@ -1,4 +1,4 @@
-# Intro_Bioinformatics_CAC_2023
+# Introduction to Bioinformatics CAC 2023
 
 # Class Activity #1 – Working with Modules
 
