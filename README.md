@@ -18,8 +18,7 @@ module list
 ```
 Now switch to `samtools` version `1.16.1` using the `module load` command.
 Try loading module `blast+`
-You can also use module spider with wildcard `$ module -r spider '.*blast.*'`
-Now let’s see if we have a module called “Bioconductor”
+You can also use module spider with wildcard `$ module -r spider '.*blast.*'. Now let’s see if we have a module called “Bioconductor”
 
 Let try loading `busco` and use command `module list` to view all loaded modules
 
@@ -35,6 +34,7 @@ Run `pip freeze` to generate `requirements.txt` file
 
 Check your installation:
 ```
+python -c "import dendropy"
 python -c "import dendropy; print(dendropy.__version__)"
 ```
 Create a new virtual environment and install packages using 'requirements.txt'
@@ -42,6 +42,14 @@ Create a new virtual environment and install packages using 'requirements.txt'
 # Class Activity #3 - Installing software using Apptainer
 
 Search for containers https://hub.docker.com/
+
+If you decide to build an image make sure to set `cache` and `tmp` for `apptainer` in a filesystem where you have read/write permission 
+
+```
+mkdir -p /scratch/$USER/apptainer/{cache,tmp}
+export APPTAINER_CACHEDIR="/scratch/$USER/apptainer/cache"
+export APPTAINER_TMPDIR="/scratch/$USER/apptainer/tmp"
+```
 
 Some tools such as `qiime2` are hosted on their own repository https://quay.io/repository/qiime2/core?tab=tags
 
