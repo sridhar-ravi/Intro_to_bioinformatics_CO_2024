@@ -78,10 +78,12 @@ apptainer build --sandbox ubuntu_sandbox ubuntu_test_git.sif
 
 # Class Activity #5 – Text editing
 
+Clone repository `git clone https://github.com/sridhar-ravi/intro_to_bioinformatics_cac_2023.git`
+
 View fasta header
 
 ```
-grep "^>" edited.fa
+grep "^>" Triticum_aestivum_subset.IWGSC.cds.all.fa
 ```
 Remove spaces from the reference seq
 ```
