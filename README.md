@@ -9,7 +9,7 @@ ssh -X saxxxxx@login.cac.queensu.ca
 ssh -X username@graham.computecanada.ca
 ```
 
-Create a folder in scratch called bioinformatics and go into it
+Create a folder in your `home` or `scratch` called bioinformatics and go into it
 Type the following command in your terminal to see which versions of `samtools` avaible on out software stack
 ```
 module spider samtools
@@ -92,3 +92,7 @@ sed 's, ,|,g'
 Print transcript id and chromosomal position
 ```
 awk -F '[ |,]' '{ if ($0 ~ /^>/) { print $1"|"$3;} else { print $0;}}'
+```
+# Class Activity #6 – Job submission
+
+Copy *.sam files from `/global/project/Workshop2023/IntroBioInfo/`
