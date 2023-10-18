@@ -75,7 +75,23 @@ apptainer build ubuntu_test_git.sif my_test_def_file.def
 apptainer build --sandbox ubuntu_sandbox ubuntu_test_git.sif
 
 ```
+# Class Activity #4 – Using mdsum
 
+Lets download a file and verify integrity
+     
+```
+wget https://ftp.ncbi.nlm.nih.gov/blast/db/18S_fungal_sequences.tar.gz
+wget https://ftp.ncbi.nlm.nih.gov/blast/db/18S_fungal_sequences.tar.gz.md5
+```
+Verify integrity
+```
+md5sum -c 18S_fungal_sequences.tar.gz.md5
+```
+   
+Split fasta file using pyfasta (hint: source ~/ENV/bin/activate)
+```
+pyfasta split -n 6 Triticum_aestivum_subset.IWGSC.cds.all.fa
+```
 # Class Activity #5 – Text editing
 
 Clone repository `git clone https://github.com/sridhar-ravi/intro_to_bioinformatics_cac_2023.git`
