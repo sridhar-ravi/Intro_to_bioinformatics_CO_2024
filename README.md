@@ -1,12 +1,12 @@
-# Introduction to Bioinformatics CAC 2023
+# Introduction to Bioinformatics CAC 2024
 
 # Class Activity #1 – Working with Modules
 
-If you have not done yet, ssh to your account on Frontenac or Alliance cluster eg: Graham or Cedar
+If you have not done yet, ssh to your account on Frontenac or Alliance cluster eg: Graham or Cedar. If you don't have an Alliance account, use the guest account from your moodle. 
 
 ```
-ssh -X saxxxxx@login.cac.queensu.ca
 ssh -X username@graham.computecanada.ca
+ssh -X userxxxx@coss-a.c3.ca
 ```
 
 Create a folder in your `home` or `scratch` called bioinformatics and go into it
@@ -18,17 +18,17 @@ module list
 ```
 Now switch to `samtools` version `1.16.1` using the `module load` command.
 Try loading module `blast+`
-You can also use module spider with wildcard `$ module -r spider '.*blast.*'. Now let’s see if we have a module called “Bioconductor”
+You can also use module spider with wildcard `module -r spider '.*blast.*'`. Now let’s see if we have a module called “Bioconductor”
 
-Let try loading `busco` and use command `module list` to view all loaded modules
+Let try loading `busco` and use command `module list` to view all loaded modules. Pay attention to `StdEnv`.
 
 # Class Activity #2 – Installing python packages
 
 DendroPy is a Python library for phylogenetic computing https://dendropy.org/index.html
 
-Find all available versions of `dendropy` and `pyfasta` in the wheelhouse
+Find all available versions of `dendropy` and `fastasplit` in the wheelhouse
 
-Install `dendropy` and `pyfasta`
+Install `dendropy` and `fastasplit`
 
 Run `pip freeze` to generate `requirements.txt` file
 
