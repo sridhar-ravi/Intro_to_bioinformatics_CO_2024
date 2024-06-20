@@ -109,7 +109,7 @@ md5sum -c 18S_fungal_sequences.tar.gz.md5
    
 Split fasta file using pyfasta (hint: source ~/ENV/bin/activate)
 ```
-pyfasta split -n 6 Triticum_aestivum_subset.IWGSC.cds.all.fa
+fastasplit -n 6 Triticum_aestivum_subset.IWGSC.cds.all.fa -p Triticum_aestivum 
 ```
 # Class Activity #5 – Text editing
 
@@ -128,6 +128,6 @@ Print transcript id and chromosomal position
 ```
 awk -F '[ |,]' '{ if ($0 ~ /^>/) { print $1"|"$3;} else { print $0;}}'
 ```
-# Class Activity #6 – Job submission
+# Class Activity #6 – Job submission and monitoring
 
-Copy *.sam files from `/global/project/Workshop2023/IntroBioInfo/`
+
