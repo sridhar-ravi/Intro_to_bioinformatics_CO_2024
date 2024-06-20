@@ -22,7 +22,11 @@ You can also use module spider with wildcard `module -r spider '.*blast.*'`. Now
 
 Let try loading `busco` and use command `module list` to view all loaded modules. Pay attention to `StdEnv`.
 
-Useful resources: https://docs.alliancecan.ca/wiki/Standard_software_environments, https://docs.alliancecan.ca/wiki/Standard_software_environments
+Useful resources:
+
+https://docs.alliancecan.ca/wiki/Standard_software_environments
+
+https://docs.alliancecan.ca/wiki/Standard_software_environments
 
 
 # Class Activity #2 – Installing python packages
@@ -41,7 +45,13 @@ python -c "import dendropy"
 python -c "import dendropy; print(dendropy.__version__)"
 ```
 Create a new virtual environment and install packages using 'requirements.txt'
-Resources: https://docs.alliancecan.ca/wiki/Python
+
+Resources: 
+
+https://docs.alliancecan.ca/wiki/Python
+
+https://docs.alliancecan.ca/wiki/ [R/Perl]
+
 
 # Class Activity #3 - Installing software using Apptainer
 
