@@ -16,13 +16,13 @@ module spider samtools
 module load samtools
 module list
 ```
-Now switch to `samtools` version `1.16.1` using the `module load` command.
+Now switch to `samtools` version `1.18` using the `module load` command.
 Try loading module `blast+`
 You can also use module spider with wildcard `module -r spider '.*blast.*'`. Now let’s see if we have a module called “Bioconductor”
 
 Let try loading `busco` and use command `module list` to view all loaded modules. Pay attention to `StdEnv`.
 
-https://docs.alliancecan.ca/wiki/Standard_software_environments, https://docs.alliancecan.ca/wiki/Standard_software_environments
+Useful resources: https://docs.alliancecan.ca/wiki/Standard_software_environments, https://docs.alliancecan.ca/wiki/Standard_software_environments
 
 
 # Class Activity #2 – Installing python packages
@@ -41,7 +41,7 @@ python -c "import dendropy"
 python -c "import dendropy; print(dendropy.__version__)"
 ```
 Create a new virtual environment and install packages using 'requirements.txt'
-https://docs.alliancecan.ca/wiki/Python
+Resources: https://docs.alliancecan.ca/wiki/Python
 
 # Class Activity #3 - Installing software using Apptainer
 
@@ -83,7 +83,7 @@ apptainer build ubuntu_fastani.sif fastani.def
 apptainer build --sandbox ubuntu_fastani fastani.def # works better with root access
 
 ```
-https://docs.alliancecan.ca/wiki/Apptainer
+Reources: https://docs.alliancecan.ca/wiki/Apptainer
 # Class Activity #4 – Using mdsum
 
 Lets download a file and verify integrity
