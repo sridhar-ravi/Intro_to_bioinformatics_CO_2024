@@ -22,6 +22,9 @@ You can also use module spider with wildcard `module -r spider '.*blast.*'`. Now
 
 Let try loading `busco` and use command `module list` to view all loaded modules. Pay attention to `StdEnv`.
 
+https://docs.alliancecan.ca/wiki/Standard_software_environments, https://docs.alliancecan.ca/wiki/Standard_software_environments
+
+
 # Class Activity #2 – Installing python packages
 
 DendroPy is a Python library for phylogenetic computing https://dendropy.org/index.html
@@ -38,6 +41,7 @@ python -c "import dendropy"
 python -c "import dendropy; print(dendropy.__version__)"
 ```
 Create a new virtual environment and install packages using 'requirements.txt'
+https://docs.alliancecan.ca/wiki/Python
 
 # Class Activity #3 - Installing software using Apptainer
 
@@ -75,6 +79,7 @@ apptainer build ubuntu_test_git.sif my_test_def_file.def
 apptainer build --sandbox ubuntu_sandbox ubuntu_test_git.sif
 
 ```
+https://docs.alliancecan.ca/wiki/Apptainer
 # Class Activity #4 – Using mdsum
 
 Lets download a file and verify integrity
