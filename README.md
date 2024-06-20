@@ -67,16 +67,20 @@ Recipe file/definition file
 Bootstrap: docker
 From: ubuntu:22.04
 Stage: build
+
 %post
-    apt-get update && apt-get install -y git
+ apt-get update && apt-get -y upgrade
+ ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
+ export DEBIAN_FRONTEND=noninteractive
+ apt-get -y install fastani
 ```
 
 Now build a container from the recipe file/definition file
 
 ```
-apptainer build ubuntu_test_git.sif my_test_def_file.def
+apptainer build ubuntu_fastani.sif fastani.def
 
-apptainer build --sandbox ubuntu_sandbox ubuntu_test_git.sif
+apptainer build --sandbox ubuntu_fastani fastani.def # works better with root access
 
 ```
 https://docs.alliancecan.ca/wiki/Apptainer
